@@ -1,0 +1,103 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+body{
+	background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+.container{
+	background-color: white;
+	padding: 15px;
+	border-radius: 5px;
+	width: 350px;
+}
+.input-place{
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+}
+.input-place input{
+	width: 75%;
+	padding: 5px;
+	outline: none;
+	border: 1px solid gray;
+	height: 30px;
+	font-weight: bold;
+}
+.input-place button{
+	width: 20%;
+	padding: 5px;
+	outline: none;
+	border: none;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+	font-size: 16px;
+	background-color: blue;
+	margin-left: 5px;
+}
+.container ul{
+	max-width: 100%;
+	max-height: 50vh;
+	overflow-y:auto;
+	padding-right: 8px;
+}
+.container ul li{
+	list-style: none;
+	background-color: #F2F2F2;
+	padding: 10px;
+	margin-top: 5px;
+	display: flex;
+	justify-content: space-between;
+	cursor: pointer;
+}
+.container li span{
+	flex-grow: 1;
+}
+.container ul li img{
+	visibility: hidden;
+	cursor: pointer;
+}
+.container ul li:hover img{
+	visibility: visible;
+}
+.operation{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+.finished{
+	text-decoration: line-through;
+	opacity: 0.5;
+}
+button{
+	cursor: pointer;
+}
+#clear{
+	outline: none;
+	border: 3px solid blue;
+	background: inherit;
+	padding: 5px;
+}
+#clear:hover{
+	background-color: blue;
+	transition: all .4s ease;
+	color: white;
+}
+#finish{
+	background-color: red;
+	color: white;
+	padding: 5px;
+	outline: none;
+	border: none;
+}
+.add{
+	font-weight: bold;
+}
